@@ -1,0 +1,37 @@
+### Read all films
+GET http://localhost:3000/films
+
+### Read all films with a variable
+@baseUrl = http://localhost:3000
+GET {{baseUrl}}/films
+
+### Read all filtered
+GET {{baseUrl}}/films?minimum-duration=181
+
+### Read a film with its id
+GET {{baseUrl}}/films/2
+
+### Create a film
+POST {{baseUrl}}/films
+Content-Type: application/json
+
+{
+      "title": "Movies",
+      "duration": 170,
+      "budget" : 159,
+      "link" : "https://hdss.watch/drame-en-streaming/3293-joker-streaming-gratuit.html"
+}
+
+### Delete a film
+DELETE {{baseUrl}}/films/3
+
+### Update a film
+PATCH {{baseUrl}}/films/2
+Content-Type: application/json
+
+{
+      "title": "TESTTTTT",
+      "duration": 80,
+      "budget" : 200,
+      "link" : "https://hdss.watch/drame-en-streaming/3293-joker-streaming-gratuit.html"
+}
