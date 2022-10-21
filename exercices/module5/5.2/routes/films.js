@@ -10,8 +10,6 @@ const {
 
 const router = express.Router();
 
-
-
 router.get('/', (req, res) => {
   
   const allFilms = readAllFilms(req?.query?.['minimum-duration']);
