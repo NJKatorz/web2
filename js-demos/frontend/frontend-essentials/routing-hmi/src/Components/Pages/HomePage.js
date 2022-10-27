@@ -48,7 +48,17 @@ const DRINKS = [
 
 const HomePage = () => {
   clearPage();
-
+  /**  fetch('http://localhost:3000/pizzas')
+  .then((response) => {
+    if (!response.ok) throw new Error(`fetch error : ${response.status} : ${response.statusText}`);
+    return response.json();
+  })
+  .then((pizzas) => {
+    renderMenuFromString(pizzas);
+  })
+  .catch((err) => {
+    console.error('HomePage::error: ', err);
+  }); */
   renderMenuFromString(MENU);
 
   attachOnMouseEventsToGoGreen();
