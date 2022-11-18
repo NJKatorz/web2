@@ -1,0 +1,95 @@
+@baseUrl = http://localhost:3000
+
+### Read all users
+GET {{baseUrl}}/users
+
+### Try to login an unknow user
+POST {{baseUrl}}/auths/login
+Content-Type: application/json
+
+{
+    "username":"unknown",
+    "password":"admin"
+}
+
+### Login the default admin
+POST {{baseUrl}}/auths/login
+Content-Type: application/json
+
+{
+    "username":"admin",
+    "password":"admin"
+}
+
+
+### Create the manager user
+POST {{baseUrl}}/auths/register
+Content-Type: application/json
+
+{
+    "username":"manager",
+    "password":"manager"
+}
+
+### Login the manager user
+POST {{baseUrl}}/auths/login
+Content-Type: application/json
+
+{
+    "username":"manager",
+    "password":"manager"
+}
+
+### Create the guest user
+POST {{baseUrl}}/auths/register
+Content-Type: application/json
+
+{
+    "username":"guest",
+    "password":"guest"
+}
+
+### Login the guest user
+POST {{baseUrl}}/auths/login
+Content-Type: application/json
+
+{
+    "username":"guest",
+    "password":"guest"
+}
+
+### Create the user (Trevor)
+POST {{baseUrl}}/auths/register
+Content-Type: application/json
+
+{
+    "username":"Trevor",
+    "password":"trevor"
+}
+
+### Login the user (Trevor)
+POST {{baseUrl}}/auths/login
+Content-Type: application/json
+
+{
+    "username":"Trevor",
+    "password":"trevor"
+}
+
+### Create the user (Nathan)
+POST {{baseUrl}}/auths/register
+Content-Type: application/json
+
+{
+    "username":"Nathan",
+    "password":"nathan"
+}
+
+### Login the user (Nathan)
+POST {{baseUrl}}/auths/login
+Content-Type: application/json
+
+{
+    "username":"Nathan",
+    "password":"nathan"
+}
