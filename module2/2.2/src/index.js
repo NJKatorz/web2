@@ -11,6 +11,7 @@ const main = document.querySelector("main");
 const div1 = document.createElement("div");
 const div2 = document.createElement("div");
 const img = document.createElement("img");
+const divForm = document.createElement("div");
 
 div1.innerHTML = `<p> Post quorum necem nihilo lenius ferociens Gallus ut leo cadaveribus pastus multa huius modi scrutabatur. 
 quae singula narrare non refert, me professione modum, quod evitandum est, excedamus. </p>`;
