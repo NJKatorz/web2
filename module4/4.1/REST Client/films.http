@@ -1,0 +1,35 @@
+### Read all films
+GET http://localhost:3000/films
+
+### Read all films with File variable
+@baseUrl = http://localhost:3000
+GET {{baseUrl}}/films
+
+### Read all films filterd
+GET {{baseUrl}}/films/?minimum-duration=170
+
+
+### Read pizza identified by 2
+GET {{baseUrl}}/films/2
+
+### Create a film
+POST {{baseUrl}}/films
+Content-Type: application/json
+
+{
+    "title":"Magic Green",
+    "duration": 290,
+    "budget": 123,
+    "link": "https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Global_Objects/Array/filter"
+}
+
+### Delete movie identified by 2
+DELETE {{baseUrl}}/films/3
+
+### Update the movie identified by 3
+PATCH {{baseUrl}}/films/6
+Content-Type: application/json
+
+{
+    "title":"New film"
+}
